@@ -8,7 +8,7 @@ This file contains the results of all CSV → Database ingestion benchmarks, inc
 
 | DB    | Mode     | Variant | Language | Total Rows | Total Time (s) | Rows/sec | Peak Memory (MB) | Peak CPU (%) |
 | ----- | -------- | ------- | -------- | ---------- | -------------- | -------- | ---------------- | ------------ |
-| MySQL | Boring   | Plain   | PHP      |            |                |          |                  |              |
+| MySQL | Boring   | Plain   | PHP      | 1000000    | 94.85          | 10542.89 | 8                |              |
 | MySQL | Boring   | Index   | PHP      |            |                |          |                  |              |
 | MySQL | Boring   | Load    | PHP      |            |                |          |                  |              |
 | MySQL | Boring   | Memory  | PHP      |            |                |          |                  |              |
@@ -23,27 +23,27 @@ This file contains the results of all CSV → Database ingestion benchmarks, inc
 
 ### 1. Total Time per Scenario
 
-![Total Time Graph](graphs/total_time_PLACEHOLDER.png)
+![Total Time Graph](graphs/combined_total_time.png)
 
 ### 2. Rows/sec per Scenario
 
-![Rows/sec Graph](graphs/rows_per_sec_PLACEHOLDER.png)
+![Rows/sec Graph](graphs/combined_rows_per_sec.png)
 
 ### 3. Memory Usage over Time
 
-![Memory Usage Graph](graphs/memory_USAGE_PLACEHOLDER.png)
+![Memory Usage Graph](graphs/MySQL_Boring_Plain_PHP_memory.png)
 
 ### 4. Memory Spikes over Time
 
-![Memory Spikes Graph](graphs/memory_SPIKES_PLACEHOLDER.png)
+![Memory Spikes Graph](graphs/MySQL_Boring_Plain_PHP_memory.png)
 
 ### 5. CPU Usage over Time
 
-![CPU Usage Graph](graphs/cpu_USAGE_PLACEHOLDER.png)
+![CPU Usage Graph](graphs/MySQL_Boring_Plain_PHP_cpu.png)
 
 ### 6. CPU Spikes over Time
 
-![CPU Spikes Graph](graphs/cpu_SPIKES_PLACEHOLDER.png)
+![CPU Spikes Graph](graphs/MySQL_Boring_Plain_PHP_cpu.png)
 
 ---
 
@@ -63,7 +63,7 @@ You can optionally add a section per language with **all variants detailed**:
 
 | DB         | Mode     | Variant | Total Time (s) | Rows/sec | Peak Memory (MB) | Peak CPU (%) |
 | ---------- | -------- | ------- | -------------- | -------- | ---------------- | ------------ |
-| MySQL      | Boring   | Plain   |                |          |                  |              |
+| MySQL      | Boring   | Plain   | 94.85          | 10542.89 | 8                |              |
 | MySQL      | Parallel | Plain   |                |          |                  |              |
 | PostgreSQL | Boring   | Copy    |                |          |                  |              |
 | ...        | ...      | ...     | ...            | ...      | ...              | ...          |
@@ -76,6 +76,12 @@ You can optionally add a section per language with **all variants detailed**:
 - Memory Spikes: ![Graph](graphs/php_memory_spikes.png)
 - CPU Usage: ![Graph](graphs/php_cpu.png)
 - CPU Spikes: ![Graph](graphs/php_cpu_spikes.png)
+- Total Time: ![Graph](graphs/MySQL_Boring_Plain_PHP_total_time.png)
+- Rows/sec: ![Graph](graphs/MySQL_Boring_Plain_PHP_rows_per_sec.png)
+- Memory Usage: ![Graph](graphs/MySQL_Boring_Plain_PHP_memory.png)
+- Memory Spikes: ![Graph](graphs/MySQL_Boring_Plain_PHP_memory.png)
+- CPU Usage: ![Graph](graphs/MySQL_Boring_Plain_PHP_cpu.png)
+- CPU Spikes: ![Graph](graphs/MySQL_Boring_Plain_PHP_cpu.png)
 
 > Repeat the above for Node.js, Python, Go, Rust, Dart
 
