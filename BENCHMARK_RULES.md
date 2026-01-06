@@ -35,7 +35,6 @@ Not measured:
 - Python
 - Go
 - Rust
-- Dart
 
 Each language must use:
 
@@ -143,7 +142,6 @@ Schema:
 - Python: 512–1024MB
 - Go: 256–512MB
 - Rust: 256MB
-- Dart: 512MB
 
 **Batch size:** 1000 rows
 

@@ -9,33 +9,29 @@ Track which tests have been completed. ✅ = Done, ❌ = Pending
 ### Boring Mode
 
 - [ ] Variant A – Plain Insert
-  - [ ] PHP
-  - [ ] Node.js
-  - [ ] Python
+  - [x] PHP
+  - [x] Node.js
+  - [x] Python
   - [ ] Go
   - [ ] Rust
-  - [ ] Dart
 - [ ] Variant B – Index ON
   - [ ] PHP
   - [ ] Node.js
   - [ ] Python
   - [ ] Go
   - [ ] Rust
-  - [ ] Dart
 - [ ] Variant C – LOAD DATA
   - [ ] PHP
   - [ ] Node.js
   - [ ] Python
   - [ ] Go
   - [ ] Rust
-  - [ ] Dart
 - [ ] Variant D – Memory Pressure
   - [ ] PHP
   - [ ] Node.js
   - [ ] Python
   - [ ] Go
   - [ ] Rust
-  - [ ] Dart
 
 ### Parallel Mode
 
@@ -45,28 +41,24 @@ Track which tests have been completed. ✅ = Done, ❌ = Pending
   - [ ] Python
   - [ ] Go
   - [ ] Rust
-  - [ ] Dart
 - [ ] Variant B – Index ON
   - [ ] PHP
   - [ ] Node.js
   - [ ] Python
   - [ ] Go
   - [ ] Rust
-  - [ ] Dart
 - [ ] Variant C – LOAD DATA
   - [ ] PHP
   - [ ] Node.js
   - [ ] Python
   - [ ] Go
   - [ ] Rust
-  - [ ] Dart
 - [ ] Variant D – Memory Pressure
   - [ ] PHP
   - [ ] Node.js
   - [ ] Python
   - [ ] Go
   - [ ] Rust
-  - [ ] Dart
 
 ---
 
@@ -80,28 +72,24 @@ Track which tests have been completed. ✅ = Done, ❌ = Pending
   - [ ] Python
   - [ ] Go
   - [ ] Rust
-  - [ ] Dart
 - [ ] Variant B – Index ON
   - [ ] PHP
   - [ ] Node.js
   - [ ] Python
   - [ ] Go
   - [ ] Rust
-  - [ ] Dart
 - [ ] Variant C – COPY
   - [ ] PHP
   - [ ] Node.js
   - [ ] Python
   - [ ] Go
   - [ ] Rust
-  - [ ] Dart
 - [ ] Variant D – Memory Pressure
   - [ ] PHP
   - [ ] Node.js
   - [ ] Python
   - [ ] Go
   - [ ] Rust
-  - [ ] Dart
 
 ### Parallel Mode
 
@@ -111,25 +99,21 @@ Track which tests have been completed. ✅ = Done, ❌ = Pending
   - [ ] Python
   - [ ] Go
   - [ ] Rust
-  - [ ] Dart
 - [ ] Variant B – Index ON
   - [ ] PHP
   - [ ] Node.js
   - [ ] Python
   - [ ] Go
   - [ ] Rust
-  - [ ] Dart
 - [ ] Variant C – COPY
   - [ ] PHP
   - [ ] Node.js
   - [ ] Python
   - [ ] Go
   - [ ] Rust
-  - [ ] Dart
 - [ ] Variant D – Memory Pressure
   - [ ] PHP
   - [ ] Node.js
   - [ ] Python
   - [ ] Go
   - [ ] Rust
-  - [ ] Dart

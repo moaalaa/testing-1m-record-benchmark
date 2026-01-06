@@ -21,8 +21,6 @@ This file contains the results of all CSV → Database ingestion benchmarks, inc
 | MySQL | Parallel | Plain   | Nodejs   |                    |                    |                    |                    |                    |
 | ...   | ...      | ...     | ...      | ...                | ...                | ...                | ...                | ...                |
 
-> Copy this table for each language (Node.js, Python, Go, Rust, Dart)
-
 ---
 
 ## 📊 Graphs
@@ -72,8 +70,6 @@ You can optionally add a section per language with **all variants detailed**:
 - Memory Spikes: ![Graph](graphs/MySQL_Boring_Plain_PHP_memory.png)
 - CPU Usage: ![Graph](graphs/MySQL_Boring_Plain_PHP_cpu.png)
 - CPU Spikes: ![Graph](graphs/MySQL_Boring_Plain_PHP_cpu.png)
-
-> Repeat the above for Node.js, Python, Go, Rust, Dart
 
 ---
 
