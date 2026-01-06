@@ -8,10 +8,10 @@ The goal is clarity, fairness, and repeatability.
 
 ## 🎯 Objective
 
-Measure **wall-clock time** required to insert **1,000,000 rows from a CSV file** into a database.
+Measure **wall-clock time** required to insert **1,000,000 rows from a CSV file** into a database.  
 Also measure **CPU and memory usage spikes** during the run.
 
-This benchmark focuses on:
+Focus:
 
 - CSV streaming & parsing
 - Database driver efficiency
@@ -72,41 +72,60 @@ id,Name,Description,Brand,Category,Price,Currency,Stock,EAN,Color,Size,Availabil
 
 Schema:
 
-| Column       | Type                            |
-| ------------ | ------------------------------- |
-| id           | INT                             |
-| Name         | VARCHAR(255)                    |
-| Description  | TEXT                            |
-| Brand        | VARCHAR(255)                    |
-| Category     | VARCHAR(100)                    |
-| Price        | DECIMAL(10,2)                   |
-| Currency     | CHAR(3)                         |
-| Stock        | INT                             |
-| EAN          | VARCHAR(20)                     |
-| Color        | VARCHAR(50)                     |
-| Size         | VARCHAR(50)                     |
-| Availability | ENUM('in_stock','out_of_stock') |
-| Internal ID  | INT                             |
+| Column       | Type                                                                                       |
+| ------------ | ------------------------------------------------------------------------------------------ |
+| id           | INT                                                                                        |
+| Name         | VARCHAR(255)                                                                               |
+| Description  | TEXT                                                                                       |
+| Brand        | VARCHAR(255)                                                                               |
+| Category     | VARCHAR(100)                                                                               |
+| Price        | DECIMAL(10,2)                                                                              |
+| Currency     | CHAR(3)                                                                                    |
+| Stock        | INT                                                                                        |
+| EAN          | VARCHAR(20)                                                                                |
+| Color        | VARCHAR(50)                                                                                |
+| Size         | VARCHAR(50)                                                                                |
+| Availability | ENUM('in_stock','out_of_stock', 'limited_stock', 'discontinued', 'pre_order', 'backorder') |
+| Internal ID  | INT                                                                                        |
 
 ---
 
 ## 🧱 Table Rules
 
+- **Static table names** per DB/mode/variant (no dynamic selection)
 - No AUTO_INCREMENT
 - Primary key provided by CSV
 - No foreign keys
 - Indexes only in specific variants
+- Tables must exist before benchmark
+- Truncate before each run
+
+### MySQL Example
+
+- `products_mysql_boring_plain`
+- `products_mysql_boring_index`
+- `products_mysql_boring_load`
+- `products_mysql_boring_memory`
+- `products_mysql_parallel_plain` … etc.
+
+### PostgreSQL Example
+
+- `products_pg_boring_plain`
+- `products_pg_boring_index`
+- `products_pg_boring_copy`
+- `products_pg_boring_memory`
+- `products_pg_parallel_plain` … etc.
 
 ---
 
 ## 🔁 Execution Protocol
 
 1. Restart database
-2. Truncate table
-3. Clear OS disk cache (if possible)
+2. Truncate target table
+3. Clear OS disk cache (optional)
 4. Run benchmark
 5. Log metrics
-6. Repeat 3 times (average results)
+6. Repeat 3 times per scenario (average results)
 
 ---
 
@@ -117,7 +136,7 @@ Schema:
 - Boring: 1 worker
 - Parallel: 4 workers
 
-**Memory Limits for Memory Pressure Variant:**
+**Memory Limits (Memory Pressure Variant):**
 
 - PHP: 512MB
 - Node.js: 512MB
@@ -181,6 +200,8 @@ Schema:
 
 ![rules](assets/rules.png)
 
+---
+
 ## 🖼️ Benchmark Workflow Diagram (Mermaid)
 
 ```mermaid
@@ -239,6 +260,7 @@ flowchart TD
     PP_B --> Metrics
     PP_C --> Metrics
     PP_D --> Metrics
+
 ```
 
 This mermaid diagram shows the **full benchmark workflow** from CSV → Base Scenario → Bonus Variant → Metrics logging.
