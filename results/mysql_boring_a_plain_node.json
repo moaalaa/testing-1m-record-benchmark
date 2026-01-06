@@ -1,0 +1,13 @@
+{
+  "db": "MySQL",
+  "mode": "Boring",
+  "variant": "Plain",
+  "language": "NodeJs",
+  "total_rows": 0,
+  "total_time_sec": 0,
+  "rows_per_sec": 0,
+  "memory_usage": [],
+  "memory_spikes": [],
+  "cpu_usage": [],
+  "cpu_spikes": []
+}
