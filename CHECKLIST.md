@@ -12,7 +12,7 @@ Track which tests have been completed. ✅ = Done, ❌ = Pending
   - [x] PHP
   - [x] Node.js
   - [x] Python
-  - [ ] Go
+  - [x] Go
   - [ ] Rust
 - [ ] Variant B – Index ON
   - [ ] PHP

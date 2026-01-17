@@ -2,7 +2,6 @@ test-file.csv
 node_modules
 .vscode
 vendor
-TEST_STEPS.md
 test.py
 
 # Created by https://www.toptal.com/developers/gitignore/api/laravel,node,python,go,rust,dart
