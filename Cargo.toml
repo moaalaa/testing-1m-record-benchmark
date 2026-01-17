@@ -1,0 +1,11 @@
+[package]
+name = "mysql_benchmark"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+mysql = "23.1.0"                                   # official MySQL driver
+csv = "1.2.2"                                      # CSV parsing
+sysinfo = "0.30"                                   # memory & CPU usage
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"

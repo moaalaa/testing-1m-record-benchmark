@@ -7,7 +7,7 @@ use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Output\ConsoleOutput;
 
 // ---------------- PHP SETTINGS ----------------
-ini_set('memory_limit', '512M'); // Set memory limit
+// ini_set('memory_limit', '512M'); // Set memory limit
 set_time_limit(0); // Unlimited execution time
 
 // Config
